@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 
+
 function LoginForm({ isLoggedIn, onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add validation here if needed
-    onLogin(); // Call parent's function to update state
+    
+    onLogin(); 
   };
 
   return (
